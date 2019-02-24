@@ -1,6 +1,8 @@
 {
-  "fields": [{
+  "fields": [
+    {
       "tab": "general",
+      "id": "general1",
       "field": "Beacon URL",
       "dbname": "beaconurl",
       "type": "text",
@@ -11,9 +13,9 @@
       "dataType": "text",
       "option": []
     },
-
     {
       "tab": "general",
+      "id": "general2",
       "field": "Site Domain",
       "dbname": "sitedomain",
       "type": "text",
@@ -26,6 +28,7 @@
     },
     {
       "tab": "general",
+      "id": "general3",
       "field": "pagedump",
       "dbname": "pagedump",
       "type": "flag",
@@ -38,6 +41,7 @@
     },
     {
       "tab": "general",
+      "id": "general4",
       "field": "Log Level",
       "dbname": "loglevel",
       "type": "range",
@@ -51,6 +55,7 @@
     },
     {
       "tab": "general",
+      "id": "general5",
       "field": "BlackList Id",
       "dbname": "blacklistid",
       "type": "textarray",
@@ -63,6 +68,7 @@
     },
     {
       "tab": "general",
+      "id": "general6",
       "field": "Data Flush Interval",
       "dbname": "dataflushinterval",
       "type": "text",
@@ -75,6 +81,7 @@
     },
     {
       "tab": "general",
+      "id": "general7",
       "field": "Cookie Size",
       "dbname": "maxcookiesize",
       "type": "text",
@@ -87,6 +94,7 @@
     },
     {
       "tab": "general",
+      "id": "general8",
       "field": "Domwatcher Mode",
       "dbname": "domwatchermode",
       "type": "flag",
@@ -99,6 +107,7 @@
     },
     {
       "tab": "general",
+      "id": "general9",
       "field": "Channel Callback",
       "dbname": "getchannelcallback",
       "type": "editor",
@@ -111,6 +120,7 @@
     },
     {
       "tab": "general",
+      "id": "general10",
       "field": "Page Ready Validator Callback",
       "dbname": "pagereadyvalidator",
       "type": "editor",
@@ -123,6 +133,7 @@
     },
     {
       "tab": "general",
+      "id": "general11",
       "field": "Remote Config Mode",
       "dbname": "remoteconfig",
       "type": "flag",
@@ -135,6 +146,7 @@
     },
     {
       "tab": "general",
+      "id": "general12",
       "field": "BlackList Cookies",
       "dbname": "blacklistcookie",
       "type": "textarray",
@@ -147,6 +159,7 @@
     },
     {
       "tab": "general",
+      "id": "general13",
       "field": "Session Flags",
       "dbname": "sessionflags",
       "type": "textarray",
@@ -159,6 +172,7 @@
     },
     {
       "tab": "general",
+      "id": "general14",
       "field": "Resource Timing Capture Mode",
       "dbname": "resourcetiming",
       "type": "flag",
@@ -170,7 +184,7 @@
       "option": []
     },
     {
-      "tab": "general",
+      "tab": "resourceTiming",
       "field": "Resource Timing Filter",
       "dbname": "resourceTimingFilter",
       "type": "json",
@@ -178,7 +192,9 @@
       "advanceFlag": false,
       "plugin": null,
       "description": "Resource Timing Filter",
-      "fields": [{
+      "fields": [
+        {
+          "id": "resourceTiming1",
           "field": "mode",
           "dbname": "mode",
           "module": "resourceTimingFilter",
@@ -186,9 +202,9 @@
           "dataType": "numeric",
           "defaultValue": false,
           "description": "mode"
-
         },
         {
+          "id": "resourceTiming2",
           "field": "Percentage",
           "dbname": "pct",
           "module": "resourceTimingFilter",
@@ -198,6 +214,7 @@
           "description": "Percentage"
         },
         {
+          "id": "resourceTiming3",
           "field": "Max PageLoad Time",
           "dbname": "maxPageLoadTime",
           "module": "resourceTimingFilter",
@@ -212,6 +229,7 @@
     },
     {
       "tab": "general",
+      "id": "general15",
       "field": "User Activity Capture Resource",
       "dbname": "uaCaptureResource",
       "type": "flag",
@@ -224,6 +242,7 @@
     },
     {
       "tab": "general",
+      "id": "general16",
       "field": "Protocol Version",
       "dbname": "protocolversion",
       "type": "flag",
@@ -236,6 +255,7 @@
     },
     {
       "tab": "general",
+      "id": "general17",
       "field": "JCP Store Stats",
       "dbname": "jcpStoreStats",
       "type": "flag",
@@ -248,6 +268,7 @@
     },
     {
       "tab": "general",
+      "id": "general18",
       "field": "RSA Encryption",
       "dbname": "rsaEncryption",
       "type": "flag",
@@ -258,7 +279,6 @@
       "dataType": "numeric",
       "option": []
     },
-
     {
       "tab": "spa",
       "field": "SPA",
@@ -268,16 +288,18 @@
       "advanceFlag": false,
       "plugin": null,
       "description": "Enable SPA module",
-      "fields": [{
-        "field": "enabled",
-        "dbname": "enabled",
-        "module": "spa",
-        "type": "flag",
-        "dataType": "numeric",
-        "defaultValue": false,
-        "description": "enabled"
-
-      }],
+      "fields": [
+        {
+          "field": "enabled",
+          "id": "spa2",
+          "dbname": "enabled",
+          "module": "spa",
+          "type": "flag",
+          "dataType": "numeric",
+          "defaultValue": false,
+          "description": "enabled"
+        }
+      ],
       "dataType": "json",
       "option": []
     },
@@ -290,18 +312,20 @@
       "advanceFlag": false,
       "plugin": null,
       "description": "Enable equeue module",
-      "fields": [{
+      "fields": [
+        {
           "field": "enabled",
+          "id": "equeue1",
           "dbname": "enabled",
           "module": "equeue",
           "type": "flag",
           "dataType": "numeric",
           "defaultValue": false,
           "description": "enabled"
-
         },
         {
           "field": "Library Path",
+          "id": "equeue1",
           "dbname": "libraryPath",
           "module": "equeue",
           "type": "text",
@@ -313,7 +337,6 @@
       "dataType": "json",
       "option": []
     },
-
     {
       "tab": "feedback",
       "field": "feedback",
@@ -323,38 +346,41 @@
       "advanceFlag": false,
       "plugin": "feedback",
       "description": "Enable feedback module",
-      "fields": [{
-        "field": "enabled",
-        "dbname": "enabled",
-        "module": "feedback",
-        "type": "flag",
-        "dataType": "numeric",
-        "defaultValue": false,
-        "description": "enable"
-
-      }, {
-        "field": "feedbackPosition",
-        "dbname": "feedbackPosition",
-        "module": "feedback",
-        "type": "text",
-        "dataType": "text",
-        "defaultValue": "Bottom",
-        "description": "feedbackPosition"
-
-      }, {
-        "field": "pluginfbjs_url",
-        "dbname": "pluginfbjs_url",
-        "module": "feedback",
-        "type": "text",
-        "dataType": "text",
-        "defaultValue": "//127.0.0.1/nv/work/feedback_Default/feedback.js",
-        "description": "pluginfbjs_url"
-
-      }],
+      "fields": [
+        {
+          "field": "enabled",
+          "id": "feedback1",
+          "dbname": "enabled",
+          "module": "feedback",
+          "type": "flag",
+          "dataType": "numeric",
+          "defaultValue": false,
+          "description": "enable"
+        },
+        {
+          "field": "feedbackPosition",
+          "id": "feedback2",
+          "dbname": "feedbackPosition",
+          "module": "feedback",
+          "type": "text",
+          "dataType": "text",
+          "defaultValue": "Bottom",
+          "description": "feedbackPosition"
+        },
+        {
+          "field": "pluginfbjs_url",
+          "id": "feedback3",
+          "dbname": "pluginfbjs_url",
+          "module": "feedback",
+          "type": "text",
+          "dataType": "text",
+          "defaultValue": "//127.0.0.1/nv/work/feedback_Default/feedback.js",
+          "description": "pluginfbjs_url"
+        }
+      ],
       "dataType": "json",
       "option": []
     },
-
     {
       "tab": "useraction",
       "field": "useraction",
@@ -364,48 +390,52 @@
       "advanceFlag": false,
       "plugin": "useraction",
       "description": "Enable useraction  module",
-      "fields": [{
-        "field": "enabled",
-        "dbname": "enabled",
-        "module": "useraction",
-        "type": "flag",
-        "dataType": "numeric",
-        "defaultValue": false,
-        "description": "enabled"
-
-      }, {
-        "field": "autoFillObserver",
-        "dbname": "autoFillObserver",
-        "module": "useraction",
-        "type": "json",
-        "dataType": "json",
-        "defaultValue": "",
-        "description": "autoFillObserver",
-        "fields": [{
-          "field": "enable",
-          "dbname": "enable",
+      "fields": [
+        {
+          "field": "enabled",
+          "id": "userAction1",
+          "dbname": "enabled",
           "module": "useraction",
           "type": "flag",
           "dataType": "numeric",
           "defaultValue": false,
-          "description": "enable"
-
-        }, {
-          "field": "frequency",
-          "dbname": "frequency",
+          "description": "enabled"
+        },
+        {
+          "field": "autoFillObserver",
+          "dbname": "autoFillObserver",
           "module": "useraction",
-          "type": "text",
-          "dataType": "numeric",
-          "defaultValue": "100",
-          "description": "frequency"
-
-        }]
-
-      }],
+          "type": "json",
+          "dataType": "json",
+          "defaultValue": "",
+          "description": "autoFillObserver",
+          "fields": [
+            {
+              "field": "enable",
+              "id": "userAction2",
+              "dbname": "enable",
+              "module": "useraction",
+              "type": "flag",
+              "dataType": "numeric",
+              "defaultValue": false,
+              "description": "enable"
+            },
+            {
+              "field": "frequency",
+              "id": "userAction3",
+              "dbname": "frequency",
+              "module": "useraction",
+              "type": "text",
+              "dataType": "numeric",
+              "defaultValue": "100",
+              "description": "frequency"
+            }
+          ]
+        }
+      ],
       "dataType": "json",
       "option": []
     },
-
     {
       "tab": "ajaxmonitor",
       "field": "Ajax Monitor",
@@ -416,115 +446,140 @@
       "plugin": "AjaxMonitor",
       "module": "AjaxMonitor",
       "description": "Ajax Monitor",
-      "fields": [{
-        "field": "enabled",
-        "dbname": "enabled",
-        "type": "flag",
-        "module": "AjaxMonitor",
-        "dataType": "numeric",
-        "defaultValue": false,
-        "description": "enabled"
-      }, {
-        "field": "capture Cross Domain",
-        "dbname": "captureCrossDomain",
-        "type": "flag",
-        "dataType": "numeric",
-        "defaultValue": true,
-        "advanceFlag": false,
-        "plugin2": "",
-        "module": "AjaxMonitor",
-        "description": "capture Cross Domain"
-      }, {
-        "field": "capture Header",
-        "dbname": "captureHeader",
-        "type": "flag",
-        "dataType": "numeric",
-        "defaultValue": true,
-        "advanceFlag": false,
-        "plugin2": "",
-        "module": "AjaxMonitor",
-        "description": "capture Header"
-      }, {
-        "field": "capture Post Data",
-        "dbname": "capturePostData",
-        "type": "flag",
-        "dataType": "numeric",
-        "defaultValue": true,
-        "advanceFlag": false,
-        "plugin2": "",
-        "module": "AjaxMonitor",
-        "description": "capture Post Data"
-      }, {
-        "field": "capture Response",
-        "dbname": "captureResponse",
-        "type": "flag",
-        "dataType": "numeric",
-        "defaultValue": true,
-        "advanceFlag": false,
-        "plugin2": "",
-        "module": "AjaxMonitor",
-        "description": "capture Responsecapture Response"
-      }, {
-        "field": "filter",
-        "dbname": "filter",
-        "type": "json",
-        "module": "AjaxMonitor",
-        "fields": [{
-          "field": "mode",
-          "description": "mode",
-          "dbname": "mode",
-          "dataType": "text",
-          "module": "filter",
-          "plugin2": "filter",
-          "type": "range",
-          "range": "blacklist,whitelist",
-          "defaultValue": "blacklist"
-        }, {
-          "field": "entry",
-          "description": "entry",
-          "dbname": "entry",
-          "module": "filter",
-          "plugin2": "filter",
-          "type": "jsonarray",
-          "fields": [{
-            "field": "domain",
-            "module": "entry",
-            "description": "domain",
-            "defaultValue": "domain",
-            "dataType": "text",
-            "dbname": "domain",
-            "plugin2": "filter",
-            "type": "text"
-          }, {
-            "field": "path",
-            "description": "path",
-            "dataType": "text",
-            "module": "entry",
-            "defaultValue": "path",
-            "dbname": "path",
-            "plugin2": "filter",
-            "type": "text"
-          }, {
-            "field": "domain_regex",
-            "description": "domain_regex",
-            "dbname": "domain_regex",
-            "defaultValue": "domain_re",
-            "module": "entry",
-            "dataType": "text",
-            "plugin2": "filter",
-            "type": "text"
-          }, {
-            "field": "path_regex",
-            "dbname": "path_regex",
-            "description": "path_regex",
-            "defaultValue": "path_re",
-            "module": "entry",
-            "dataType": "text",
-            "plugin2": "filter",
-            "type": "text"
-          }]
-        }]
-      }]
+      "fields": [
+        {
+          "field": "enabled",
+          "id": "ajaxMonitor1",
+          "dbname": "enabled",
+          "type": "flag",
+          "module": "AjaxMonitor",
+          "dataType": "numeric",
+          "defaultValue": false,
+          "description": "enabled"
+        },
+        {
+          "field": "capture Cross Domain",
+          "id": "ajaxMonitor2",
+          "dbname": "captureCrossDomain",
+          "type": "flag",
+          "dataType": "numeric",
+          "defaultValue": true,
+          "advanceFlag": false,
+          "plugin2": "",
+          "module": "AjaxMonitor",
+          "description": "capture Cross Domain"
+        },
+        {
+          "field": "capture Header",
+          "id": "ajaxMonitor3",
+          "dbname": "captureHeader",
+          "type": "flag",
+          "dataType": "numeric",
+          "defaultValue": true,
+          "advanceFlag": false,
+          "plugin2": "",
+          "module": "AjaxMonitor",
+          "description": "capture Header"
+        },
+        {
+          "field": "capture Post Data",
+          "id": "ajaxMonitor4",
+          "dbname": "capturePostData",
+          "type": "flag",
+          "dataType": "numeric",
+          "defaultValue": true,
+          "advanceFlag": false,
+          "plugin2": "",
+          "module": "AjaxMonitor",
+          "description": "capture Post Data"
+        },
+        {
+          "field": "capture Response",
+          "id": "ajaxMonitor5",
+          "dbname": "captureResponse",
+          "type": "flag",
+          "dataType": "numeric",
+          "defaultValue": true,
+          "advanceFlag": false,
+          "plugin2": "",
+          "module": "AjaxMonitor",
+          "description": "capture Responsecapture Response"
+        },
+        {
+          "field": "filter",
+          "dbname": "filter",
+          "type": "json",
+          "module": "AjaxMonitor",
+          "fields": [
+            {
+              "field": "mode",
+              "id": "ajaxMonitor6",
+              "description": "mode",
+              "dbname": "mode",
+              "dataType": "text",
+              "module": "filter",
+              "plugin2": "filter",
+              "type": "range",
+              "range": "blacklist,whitelist",
+              "defaultValue": "blacklist"
+            },
+            {
+              "field": "entry",
+              "description": "entry",
+              "dbname": "entry",
+              "module": "filter",
+              "plugin2": "filter",
+              "type": "jsonarray",
+              "fields": [
+                {
+                  "field": "domain",
+                  "id": "ajaxMonitor7",
+                  "module": "entry",
+                  "description": "domain",
+                  "defaultValue": "domain",
+                  "dataType": "text",
+                  "dbname": "domain",
+                  "plugin2": "filter",
+                  "type": "text"
+                },
+                {
+                  "field": "path",
+                  "id": "ajaxMonitor8",
+                  "description": "path",
+                  "dataType": "text",
+                  "module": "entry",
+                  "defaultValue": "path",
+                  "dbname": "path",
+                  "plugin2": "filter",
+                  "type": "text"
+                },
+                {
+                  "field": "domain_regex",
+                  "id": "ajaxMonitor9",
+                  "description": "domain_regex",
+                  "dbname": "domain_regex",
+                  "defaultValue": "domain_re",
+                  "module": "entry",
+                  "dataType": "text",
+                  "plugin2": "filter",
+                  "type": "text"
+                },
+                {
+                  "field": "path_regex",
+                  "id": "ajaxMonitor10",
+                  "dbname": "path_regex",
+                  "description": "path_regex",
+                  "defaultValue": "path_re",
+                  "module": "entry",
+                  "dataType": "text",
+                  "plugin2": "filter",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "tab": "domwatcher",
@@ -536,138 +591,169 @@
       "plugin": "MutationObserver",
       "module": "MutationObserver",
       "description": "Mutation Observer",
-      "fields": [{
-        "field": "filterUnexpected",
-        "dbname": "filterUnexpected",
-        "type": "flag",
-        "dataType": "numeric",
-        "defaultValue": true,
-        "advanceFlag": false,
-        "plugin2": "MutationObserver",
-        "module": "MutationObserver",
-        "description": "Enable this flag if part of configuration hosted on remote server."
-      }, {
-        "field": "filters",
-        "type": "jsonarray",
-        "advanceFlag": false,
-        "plugin2": "MutationObserver",
-        "module": "MutationObserver",
-        "dbname": "filterElement",
-        "description": "filters",
-        "fields": [{
-          "field": "element",
-          "type": "text",
-          "defaultValue": "c",
-          "plugin2": "MutationObserver",
-          "dataType": "text",
-          "module": "filters",
-          "dbname": "element",
-          "description": "element"
-        }, {
-          "field": "attribute Change",
+      "fields": [
+        {
+          "field": "filterUnexpected",
+          "id": "domWatcher1",
+          "dbname": "filterUnexpected",
           "type": "flag",
+          "dataType": "numeric",
           "defaultValue": true,
-          "dataType": "numeric",
-          "module": "filters",
+          "advanceFlag": false,
           "plugin2": "MutationObserver",
-          "dbname": "aChange",
-          "description": "attribute Change"
-        }]
-      }, {
-        "field": "XHRModule",
-        "dbname": "XHRModule",
-        "type": "json",
-        "plugin2": "MutationObserver",
-        "module": "XHRModule",
-        "fields": [{
-          "field": "enable",
-          "description": "enable",
-          "dbname": "enable",
+          "module": "MutationObserver",
+          "description": "Enable this flag if part of configuration hosted on remote server."
+        },
+        {
+          "field": "filters",
+          "type": "jsonarray",
+          "advanceFlag": false,
           "plugin2": "MutationObserver",
-          "module": "XHRModule",
-          "type": "flag",
-          "dataType": "numeric",
-          "defaultValue": false
-        }, {
-          "field": "options",
-          "dbname": "options",
-          "description": "options",
-          "type": "json",
-          "module": "options",
-          "plugin2": "XHRModule",
-          "fields": [{
-            "field": "captureCrossDomain",
-            "description": "captureCrossDomain",
-            "dbname": "captureCrossDomain",
-            "dataType": "numeric",
-            "plugin2": "XHRModule",
-            "module": "options",
-            "type": "flag"
-          }, {
-            "field": "filter",
-            "description": "filter",
-            "dbname": "filters",
-            "type": "json",
-            "module": "filters",
-            "plugin2": "options",
-            "fields": [{
-              "field": "mode",
-              "dbname": "mode",
-              "description": "mode",
+          "module": "MutationObserver",
+          "dbname": "filterElement",
+          "description": "filters",
+          "fields": [
+            {
+              "field": "element",
+              "id": "domWatcher2",
+              "type": "text",
+              "defaultValue": "c",
+              "plugin2": "MutationObserver",
               "dataType": "text",
               "module": "filters",
-              "plugin2": "filter",
-              "type": "range",
-              "range": "blacklist,whitelist",
-              "defaultValue": "blacklist"
-            }, {
-              "field": "entry",
-              "description": "entry",
-              "dbname": "entry",
+              "dbname": "element",
+              "description": "element"
+            },
+            {
+              "field": "attribute Change",
+              "id": "domWatcher3",
+              "type": "flag",
+              "defaultValue": true,
+              "dataType": "numeric",
               "module": "filters",
-              "plugin2": "filter",
-              "type": "jsonarray",
-              "fields": [{
-                "field": "domain",
-                "description": "domain",
-                "module": "entry",
-                "defaultValue": "domain",
-                "dataType": "text",
-                "dbname": "domain",
-                "plugin2": "filter",
-                "type": "text"
-              }, {
-                "field": "path",
-                "dataType": "text",
-                "module": "entry",
-                "defaultValue": "path",
-                "dbname": "path",
-                "description": "path",
-                "plugin2": "filter",
-                "type": "text"
-              }, {
-                "field": "domain_regex",
-                "dbname": "domain_regex",
-                "description": "domain_regex",
-                "defaultValue": "domain_re",
-                "module": "entry",
-                "dataType": "text",
-                "plugin2": "filter",
-                "type": "text"
-              }, {
-                "field": "path_regex",
-                "dbname": "path_regex",
-                "description": "path_regex",
-                "defaultValue": "path_re",
-                "module": "entry",
-                "dataType": "text",
-                "plugin2": "filter",
-                "type": "text"
-              }]
-            }]
-          }]
-        }]
-      }]
+              "plugin2": "MutationObserver",
+              "dbname": "aChange",
+              "description": "attribute Change"
+            }
+          ]
+        },
+        {
+          "field": "XHRModule",
+          "dbname": "XHRModule",
+          "type": "json",
+          "plugin2": "MutationObserver",
+          "module": "XHRModule",
+          "fields": [
+            {
+              "field": "enable",
+              "id": "domWatcher4",
+              "description": "enable",
+              "dbname": "enable",
+              "plugin2": "MutationObserver",
+              "module": "XHRModule",
+              "type": "flag",
+              "dataType": "numeric",
+              "defaultValue": false
+            },
+            {
+              "field": "options",
+              "dbname": "options",
+              "description": "options",
+              "type": "json",
+              "module": "options",
+              "plugin2": "XHRModule",
+              "fields": [
+                {
+                  "field": "captureCrossDomain",
+                  "id": "domWatcher5",
+                  "description": "captureCrossDomain",
+                  "dbname": "captureCrossDomain",
+                  "dataType": "numeric",
+                  "plugin2": "XHRModule",
+                  "module": "options",
+                  "type": "flag"
+                },
+                {
+                  "field": "filter",
+                  "description": "filter",
+                  "dbname": "filters",
+                  "type": "json",
+                  "module": "filters",
+                  "plugin2": "options",
+                  "fields": [
+                    {
+                      "field": "mode",
+                      "id": "domWatcher6",
+                      "dbname": "mode",
+                      "description": "mode",
+                      "dataType": "text",
+                      "module": "filters",
+                      "plugin2": "filter",
+                      "type": "range",
+                      "range": "blacklist,whitelist",
+                      "defaultValue": "blacklist"
+                    },
+                    {
+                      "field": "entry",
+                      "description": "entry",
+                      "dbname": "entry",
+                      "module": "filters",
+                      "plugin2": "filter",
+                      "type": "jsonarray",
+                      "fields": [
+                        {
+                          "field": "domain",
+                          "id": "domWatcher7",
+                          "description": "domain",
+                          "module": "entry",
+                          "defaultValue": "domain",
+                          "dataType": "text",
+                          "dbname": "domain",
+                          "plugin2": "filter",
+                          "type": "text"
+                        },
+                        {
+                          "field": "path",
+                          "id": "domWatcher8",
+                          "dataType": "text",
+                          "module": "entry",
+                          "defaultValue": "path",
+                          "dbname": "path",
+                          "description": "path",
+                          "plugin2": "filter",
+                          "type": "text"
+                        },
+                        {
+                          "field": "domain_regex",
+                          "id": "domWatcher9",
+                          "dbname": "domain_regex",
+                          "description": "domain_regex",
+                          "defaultValue": "domain_re",
+                          "module": "entry",
+                          "dataType": "text",
+                          "plugin2": "filter",
+                          "type": "text"
+                        },
+                        {
+                          "field": "path_regex",
+                          "id": "domWatcher10",
+                          "dbname": "path_regex",
+                          "description": "path_regex",
+                          "defaultValue": "path_re",
+                          "module": "entry",
+                          "dataType": "text",
+                          "plugin2": "filter",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "tab": "",
@@ -677,35 +763,42 @@
       "module": "enhancement",
       "plugin2": "",
       "type": "jsonarray",
-      "fields": [{
-        "field": "id",
-        "module": "enhancement",
-        "description": "id",
-        "defaultValue": "",
-        "dataType": "text",
-        "dbname": "id",
-        "plugin2": "",
-        "type": "text"
-      }, {
-        "field": "mode",
-        "description": "mode",
-        "dataType": "numeric",
-        "module": "enhancement",
-        "defaultValue": "",
-        "dbname": "mode",
-        "plugin2": "",
-        "type": "range",
-        "range": "1-2"
-      }, {
-        "field": "pageid",
-        "dbname": "pageid",
-        "defaultValue": "",
-        "module": "enhancement",
-        "dataType": "text",
-        "plugin2": "",
-        "description": "pageid",
-        "type": "text"
-      }]
+      "fields": [
+        {
+          "field": "id",
+          "id": "",
+          "module": "enhancement",
+          "description": "id",
+          "defaultValue": "",
+          "dataType": "text",
+          "dbname": "id",
+          "plugin2": "",
+          "type": "text"
+        },
+        {
+          "field": "mode",
+          "id": "",
+          "description": "mode",
+          "dataType": "numeric",
+          "module": "enhancement",
+          "defaultValue": "",
+          "dbname": "mode",
+          "plugin2": "",
+          "type": "range",
+          "range": "1-2"
+        },
+        {
+          "field": "pageid",
+          "id": "",
+          "dbname": "pageid",
+          "defaultValue": "",
+          "module": "enhancement",
+          "dataType": "text",
+          "plugin2": "",
+          "description": "pageid",
+          "type": "text"
+        }
+      ]
     },
     {
       "tab": "customdata",
@@ -715,62 +808,75 @@
       "module": "customdata",
       "plugin2": "",
       "type": "jsonarray",
-      "fields": [{
-        "field": "id",
-        "description": "id",
-        "module": "customdata",
-        "defaultValue": "",
-        "dataType": "text",
-        "dbname": "id",
-        "plugin2": "",
-        "type": "text"
-      }, {
-        "field": "mode",
-        "description": "mode",
-        "dataType": "numeric",
-        "module": "customdata",
-        "defaultValue": "",
-        "dbname": "mode",
-        "plugin2": "",
-        "type": "range",
-        "range": "1-2"
-      }, {
-        "field": "pageid",
-        "dbname": "pageid",
-        "defaultValue": "",
-        "description": "pageid",
-        "module": "customdata",
-        "dataType": "text",
-        "plugin2": "",
-        "type": "text"
-      }, {
-        "field": "exp",
-        "description": "exp",
-        "module": "customdata",
-        "defaultValue": "",
-        "dataType": "text",
-        "dbname": "exp",
-        "plugin2": "",
-        "type": "text"
-      }, {
-        "field": "cmname",
-        "description": "cmname",
-        "dataType": "text",
-        "module": "customdata",
-        "defaultValue": "",
-        "dbname": "cmname",
-        "plugin2": "",
-        "type": "text"
-      }, {
-        "field": "pattern",
-        "dbname": "pattern",
-        "description": "pattern",
-        "defaultValue": "",
-        "module": "customdata",
-        "dataType": "text",
-        "plugin2": "",
-        "type": "text"
-      }]
+      "fields": [
+        {
+          "field": "id",
+          "id": "customData1",
+          "description": "id",
+          "module": "customdata",
+          "defaultValue": "",
+          "dataType": "text",
+          "dbname": "id",
+          "plugin2": "",
+          "type": "text"
+        },
+        {
+          "field": "mode",
+          "id": "customData2",
+          "description": "mode",
+          "dataType": "numeric",
+          "module": "customdata",
+          "defaultValue": "",
+          "dbname": "mode",
+          "plugin2": "",
+          "type": "range",
+          "range": "1-2"
+        },
+        {
+          "field": "pageid",
+          "id": "customData3",
+          "dbname": "pageid",
+          "defaultValue": "",
+          "description": "pageid",
+          "module": "customdata",
+          "dataType": "text",
+          "plugin2": "",
+          "type": "text"
+        },
+        {
+          "field": "exp",
+          "id": "customData4",
+          "description": "exp",
+          "module": "customdata",
+          "defaultValue": "",
+          "dataType": "text",
+          "dbname": "exp",
+          "plugin2": "",
+          "type": "text"
+        },
+        {
+          "field": "cmname",
+          "id": "customData5",
+          "description": "cmname",
+          "dataType": "text",
+          "module": "customdata",
+          "defaultValue": "",
+          "dbname": "cmname",
+          "plugin2": "",
+          "type": "text"
+        },
+        {
+          "field": "pattern",
+          "id": "customData6",
+          "dbname": "pattern",
+          "description": "pattern",
+          "defaultValue": "",
+          "module": "customdata",
+          "dataType": "text",
+          "plugin2": "",
+          "type": "text"
+        }
+      ]
     },
     {
       "tab": "clickmonitor",
@@ -781,26 +887,30 @@
       "advanceFlag": false,
       "plugin": "",
       "description": "Monitor clicks",
-      "fields": [{
+      "fields": [
+        {
           "field": "enable",
+          "id": "clickMonitor1",
           "dbname": "enable",
           "module": "",
           "type": "flag",
           "dataType": "numeric",
           "defaultValue": false,
           "description": "enable"
-
-        }, {
+        },
+        {
           "field": "pageList",
+          "id": "clickMonitor2",
           "dbname": "pageList",
           "module": "",
           "type": "text",
           "dataType": "text",
           "defaultValue": "",
           "description": "pageList"
-
-        }, {
+        },
+        {
           "field": "completeDocument",
+          "id": "clickMonitor3",
           "dbname": "completeDocument",
           "module": "",
           "type": "flag",
@@ -810,6 +920,7 @@
         },
         {
           "field": "fireOnce",
+          "id": "clickMonitor4",
           "dbname": "fireOnce",
           "module": "",
           "type": "flag",
@@ -824,48 +935,56 @@
           "module": "",
           "plugin2": "",
           "type": "jsonarray",
-          "fields": [{
-            "field": "s",
-            "module": "",
-            "defaultValue": "",
-            "dataType": "text",
-            "dbname": "s",
-            "plugin2": "",
-            "description": "s",
-            "type": "text"
-          }, {
-            "field": "e",
-            "dataType": "text",
-            "module": "",
-            "defaultValue": "",
-            "dbname": "e",
-            "plugin2": "",
-            "description": "e",
-            "type": "text"
-          }, {
-            "field": "t",
-            "dbname": "t",
-            "defaultValue": "",
-            "module": "",
-            "dataType": "text",
-            "description": "t",
-            "plugin2": "",
-            "type": "text"
-          }, {
-            "field": "c",
-            "module": "",
-            "defaultValue": "",
-            "dataType": "text",
-            "dbname": "c",
-            "plugin2": "",
-            "description": "c",
-            "type": "editor"
-          }]
+          "fields": [
+            {
+              "field": "s",
+              "id": "clickMonitor5",
+              "module": "",
+              "defaultValue": "",
+              "dataType": "text",
+              "dbname": "s",
+              "plugin2": "",
+              "description": "s",
+              "type": "text"
+            },
+            {
+              "field": "e",
+              "id": "clickMonitor6",
+              "dataType": "text",
+              "module": "",
+              "defaultValue": "",
+              "dbname": "e",
+              "plugin2": "",
+              "description": "e",
+              "type": "text"
+            },
+            {
+              "field": "t",
+              "id": "clickMonitor7",
+              "dbname": "t",
+              "defaultValue": "",
+              "module": "",
+              "dataType": "text",
+              "description": "t",
+              "plugin2": "",
+              "type": "text"
+            },
+            {
+              "field": "c",
+              "id": "clickMonitor8",
+              "module": "",
+              "defaultValue": "",
+              "dataType": "text",
+              "dbname": "c",
+              "plugin2": "",
+              "description": "c",
+              "type": "editor"
+            }
+          ]
         }
       ],
       "dataType": "json",
       "option": []
     }
-
   ]
 }
