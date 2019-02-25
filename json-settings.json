@@ -1,0 +1,38 @@
+[
+  {
+    "formName" : "general",
+    "fields" : [
+      {
+        "key":"Bacon_Url",
+        "value" : "",
+        "label" : "BACON URL",
+        "controlType" : "input",
+        "required" : true
+      },
+      {
+        "key":"Page_Dump",
+        "value" : "",
+        "label" : "Page Dump",
+        "controlType" : "toggle",
+        "required" : true
+      },
+      {
+        "key":"Log_Level",
+        "value" : "",
+        "label" : "Log Level",
+        "required" : true,
+        "options" : [
+          {"key": "",  "value": "Select an option"},
+          {"key": "element", "value" : "Element"},
+          {"key": "url",  "value": "URL"},
+          {"key": "cookie",   "value": "Cookie"},
+          {"key": "page", "value": "Page Name"},
+          {"key": "session", "value": "Session Data"},
+          {"key": "channel", "value": "Channel"}
+        ] ,
+        "controlType": "Select"
+      }
+
+    ]
+  }
+]
