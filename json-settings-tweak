@@ -101,6 +101,7 @@
     {
       "tab": "general",
       "id": "general8",
+      "controlType": "Select",
       "field": "Domwatcher Mode",
       "dbname": "domwatchermode",
       "type": "flag",
@@ -109,7 +110,15 @@
       "plugin": null,
       "description": "Domwatcher Mode",
       "dataType": "numeric",
-      "option": []
+      "option": [
+            {"key": "",  "value": "Select an option"},
+            {"key": "element", "value" : "Element"},
+            {"key": "url",  "value": "URL"},
+            {"key": "cookie",   "value": "Cookie"},
+            {"key": "page", "value": "Page Name"},
+            {"key": "session", "value": "Session Data"},
+            {"key": "channel", "value": "Channel"}
+            ]
     },
     {
       "tab": "general",
