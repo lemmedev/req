@@ -2,7 +2,8 @@
   "fields": [
     {
       "tab": "general",
-      "id": "general1",
+      "key": "general1",
+      "controlType": "textbox",
       "field": "Beacon URL",
       "dbname": "beaconurl",
       "type": "text",
@@ -16,6 +17,7 @@
     {
       "tab": "general",
       "id": "general2",
+      "controlType": "textbox",
       "field": "Site Domain",
       "dbname": "sitedomain",
       "type": "text",
@@ -29,6 +31,7 @@
     {
       "tab": "general",
       "id": "general3",
+      "controlType": "textbox",
       "field": "pagedump",
       "dbname": "pagedump",
       "type": "flag",
@@ -42,6 +45,7 @@
     {
       "tab": "general",
       "id": "general4",
+      "controlType": "textbox",
       "field": "Log Level",
       "dbname": "loglevel",
       "type": "range",
@@ -56,6 +60,7 @@
     {
       "tab": "general",
       "id": "general5",
+      "controlType": "textbox",
       "field": "BlackList Id",
       "dbname": "blacklistid",
       "type": "textarray",
@@ -69,6 +74,7 @@
     {
       "tab": "general",
       "id": "general6",
+      "controlType": "dropdown",
       "field": "Data Flush Interval",
       "dbname": "dataflushinterval",
       "type": "text",
